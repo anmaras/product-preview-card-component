@@ -1,0 +1,46 @@
+.product-info {
+  background-color: rgb(var(--white));
+  border-bottom-right-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  padding: 1.5rem;
+  display: grid;
+}
+
+.product-id {
+  text-transform: uppercase;
+  letter-spacing: 4.75px;
+  color: rgb(var(--dark-grayish-blue));
+}
+
+.product-title {
+  color: rgb(var(--very-dark-blue));
+  font-family: 'Fraunces', sans-serif;
+  font-size: 2.4rem;
+  line-height: 1;
+}
+
+.product-description {
+  color: rgb(var(--dark-grayish-blue));
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.product-price {
+  font-family: 'Fraunces', sans-serif;
+  color: rgb(var(--clr-light-cyan));
+  font-size: 2.4rem;
+}
+
+.product-price > span {
+  font-size: 14px;
+  vertical-align: middle;
+  text-decoration-line: line-through;
+  color: rgb(var(--dark-grayish-blue));
+}
+
+.product-info button {
+  background-color: rgb(var(--clr-light-cyan));
+  border: none;
+  color: rgb(var(--white));
+  border-radius: var(--border-radius);
+}
