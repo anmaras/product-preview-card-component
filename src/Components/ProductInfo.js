@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import cartLogo from '../Images/icon-cart.svg';
+import style from './ProductInfo.module.css';
 
 class ProductInfo extends Component {
   constructor(props) {
@@ -14,11 +15,11 @@ class ProductInfo extends Component {
     const { category, title, description, price } = this.props;
 
     return (
-      <div>
-        <p>{category}</p>
-        <h1>{title}</h1>
-        <p>{description}</p>
-        <p>
+      <section className={style['product-info']}>
+        <p className={style['product-id']}>{category}</p>
+        <h1 className={style['product-title']}>{title}</h1>
+        <p className={style['product-description']}>{description}</p>
+        <p className={style['product-price']}>
           $149.99 <span>{`$${price}`}</span>
         </p>
         <button>
@@ -29,7 +30,7 @@ class ProductInfo extends Component {
           ></img>
           Add to Cart
         </button>
-      </div>
+      </section>
     );
   }
 }
