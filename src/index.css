@@ -5,11 +5,15 @@
 :root {
   /* Primary */
   --clr-dark-cyan: 60, 94, 82;
+  --clr-light-cyan: 85, 150, 131;
   --clr-cream: 235, 190, 145;
   /* Neutral */
   --very-dark-blue: 28, 32, 36;
   --dark-grayish-blue: 108, 111, 122;
   --white: 255, 255, 255;
+
+  /* Border */
+  --border-radius: 10px;
 }
 
 /* ------------------- */
@@ -68,6 +72,8 @@ select {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  font-size: calc(10px + 2vmin);
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
