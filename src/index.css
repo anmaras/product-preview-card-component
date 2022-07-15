@@ -51,6 +51,20 @@ ul {
   list-style: none;
   padding: 0;
 }
+/* make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
 
 body {
   font-family: 'Montserrat', sans-serif;

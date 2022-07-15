@@ -13,6 +13,7 @@
 
 # misc
 project-design/
+Images/
 .DS_Store
 .env.local
 .env.development.local
