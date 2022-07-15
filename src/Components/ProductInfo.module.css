@@ -44,3 +44,11 @@
   color: rgb(var(--white));
   border-radius: var(--border-radius);
 }
+
+.product-info button:hover {
+  background-color: rgb(var(--clr-dark-cyan));
+}
+
+.product-info button:active {
+  transform: scale(0.98);
+}
