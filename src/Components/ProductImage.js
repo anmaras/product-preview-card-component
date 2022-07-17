@@ -3,9 +3,12 @@ import style from './ProductImage.module.css';
 
 class ProductImage extends Component {
   render() {
-    const { src } = this.props;
+    const { src, srcDesk } = this.props;
     return (
-      <img className={style.img} src={src} alt="perfume top photograph"></img>
+      <picture>
+        <source media="(min-width:736px" srcSet={srcDesk}></source>
+        <img className={style.img} src={src} alt="perfume top photograph"></img>
+      </picture>
     );
   }
 }
