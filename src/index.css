@@ -72,7 +72,8 @@ select {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: calc(10px + 2vmin);
+  font-size: 14px;
+  /* font-size: calc(10px + 2vmin); */
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
