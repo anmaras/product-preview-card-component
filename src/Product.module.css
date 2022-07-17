@@ -1,8 +1,18 @@
 .product {
   background-color: rgb(var(--clr-cream));
   min-height: 100vh;
-  font-size: calc(10px + 2vmin);
   display: grid;
   grid-template-rows: auto 1fr;
-  padding: 1.3rem;
+  padding-block: 1.75rem;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 736px) {
+  .product {
+    background-color: red;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: max-content;
+    justify-content: center;
+    align-content: center;
+  }
 }

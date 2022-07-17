@@ -4,38 +4,47 @@
   border-bottom-left-radius: var(--border-radius);
   padding: 1.5rem;
   display: grid;
+  grid-template-rows: max-content;
 }
 
 .product-id {
+  font-size: 0.76rem;
   text-transform: uppercase;
-  letter-spacing: 4.75px;
+  letter-spacing: 4.9px;
   color: rgb(var(--dark-grayish-blue));
 }
 
 .product-title {
   color: rgb(var(--very-dark-blue));
   font-family: 'Fraunces', sans-serif;
-  font-size: 2.4rem;
+  font-size: 1.96rem;
   line-height: 1;
+  align-self: center;
 }
 
 .product-description {
   color: rgb(var(--dark-grayish-blue));
-  font-size: 14px;
-  line-height: 1.9;
+  font-size: 13px;
+  line-height: 1.8;
+  margin-block: 0.05rem;
 }
 
 .product-price {
   font-family: 'Fraunces', sans-serif;
   color: rgb(var(--clr-light-cyan));
-  font-size: 2.4rem;
+  font-size: 1.99rem;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .product-price > span {
-  font-size: 14px;
-  vertical-align: middle;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.856rem;
   text-decoration-line: line-through;
   color: rgb(var(--dark-grayish-blue));
+  letter-spacing: -0.3px;
 }
 
 .product-info button {
@@ -43,6 +52,12 @@
   border: none;
   color: rgb(var(--white));
   border-radius: var(--border-radius);
+  border-radius: 9px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
 }
 
 .product-info button:hover {
@@ -51,4 +66,33 @@
 
 .product-info button:active {
   transform: scale(0.98);
+}
+
+@media (min-width: 736px) {
+  .product-info {
+    padding: 2rem;
+    border-radius: 0px;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    grid-template-rows: max-content auto auto auto auto;
+  }
+
+  .product-title {
+    align-self: center;
+    line-height: 1;
+
+    padding-block: 10px;
+  }
+
+  .product-description {
+    font-size: 14px;
+    align-self: flex-start;
+    margin-block: 0;
+    line-height: 1.65;
+  }
+
+  .product-price {
+    align-self: flex-start;
+    padding-top: 0.1rem;
+  }
 }
