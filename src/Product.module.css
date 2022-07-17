@@ -9,7 +9,6 @@
 
 @media (min-width: 736px) {
   .product {
-    background-color: red;
     grid-template-columns: repeat(2, 300px);
     grid-template-rows: max-content;
     justify-content: center;

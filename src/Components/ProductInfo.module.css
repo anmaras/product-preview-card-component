@@ -77,6 +77,10 @@
     grid-template-rows: max-content auto auto auto auto;
   }
 
+  .product-id {
+    letter-spacing: 4.7px;
+  }
+
   .product-title {
     align-self: center;
     line-height: 1;
@@ -87,12 +91,15 @@
   .product-description {
     font-size: 14px;
     align-self: flex-start;
-    margin-block: 0;
     line-height: 1.65;
   }
 
   .product-price {
     align-self: flex-start;
-    padding-top: 0.1rem;
+    letter-spacing: -0.2px;
+  }
+
+  .product-info button {
+    min-height: 1.4rem;
   }
 }
